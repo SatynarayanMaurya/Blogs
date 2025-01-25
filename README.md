@@ -1,4 +1,4 @@
-# Blogs
+
 # Blog Application Backend
 
 This repository contains the backend for a blog application, enabling users to perform CRUD operations on blog posts. The backend is built with Node.js, Express.js, and MongoDB, and includes user authentication with JSON Web Tokens (JWT).
@@ -38,3 +38,77 @@ This repository contains the backend for a blog application, enabling users to p
      "email": "john@gmail.com",
      "password": "123456"
    }
+
+   Login
+POST /login
+Request Body:
+json
+Copy
+Edit
+{
+  "email": "john@gmail.com",
+  "password": "123456"
+}
+Blog Management
+Create Blog
+POST /create
+Request Body:
+
+json
+Copy
+Edit
+{
+  "title": "Blog Title",
+  "content": "Blog Content"
+}
+Get All Blogs
+GET /all
+
+Get Blog by ID
+GET /byId/:id
+Example: /byId/67927411e69f8d78a64bb72b
+
+Update Blog by ID
+PUT /update/:id
+Request Body:
+
+json
+Copy
+Edit
+{
+  "title": "Updated Blog Title",
+  "content": "Updated Blog Content"
+}
+Delete Blog by ID
+DELETE /delete/:id
+Example: /delete/67927411e69f8d78a64bb72b
+
+Getting Started
+Prerequisites
+Node.js installed
+MongoDB running locally or on a cloud service
+Installation
+Clone the repository:
+bash
+Copy
+Edit
+git clone <repository_url>
+Navigate to the project directory:
+bash
+Copy
+Edit
+cd <project_name>
+Install dependencies:
+bash
+Copy
+Edit
+npm install
+Set up environment variables:
+MONGO_URI: MongoDB connection string
+JWT_SECRET: Secret key for token generation
+Start the server:
+bash
+Copy
+Edit
+npm start
+
