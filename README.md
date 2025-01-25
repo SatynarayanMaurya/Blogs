@@ -42,20 +42,13 @@ This repository contains the backend for a blog application, enabling users to p
 2. **Login**
     **POST** `/login`
   **Request Body**:
-```
+```json
 {
   "email": "john@gmail.com",
   "password": "123456"
 }
 ```
 
-3. **Login**
-    **POST** `/login`
-**Request Body**:
-```json
-{
-  "email": "john@gmail.com",
-  "password": "123456"
-}
+
 
 
