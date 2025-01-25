@@ -32,22 +32,22 @@ This repository contains the backend for a blog application, enabling users to p
 1. **Signup**  
    **POST** `/signup`  
    **Request Body**:
-  
+  ```
    {
      "name": "John Doe",
      "email": "john@gmail.com",
      "password": "123456"
    }
-
+```
 2. **Login**
     **POST** `/login`
   **Request Body**:
-
+```
 {
   "email": "john@gmail.com",
   "password": "123456"
 }
-
+```
 
 3. **Login**
     **POST** `/login`
