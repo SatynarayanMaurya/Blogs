@@ -63,15 +63,20 @@ This repository contains the backend for a blog application, enabling users to p
 ```
 
 2. **Get All Blog**  
-   **GET** `/all`  
+   **GET** `/all`
+     ```json
+   {
+     
+    }
+```
  
 
-3. **Get Blog by id**  
-   **GET** `//byId/:id`  
+4. **Get Blog by id**  
+   **GET** `/byId/:id`  
    For example id = 67927411e69f8d78a64bb72b
  
 
-4. **Update Blog by id**  
+5. **Update Blog by id**  
    **PUT** `/update/:id`
    For example id = 67927411e69f8d78a64bb72b
    **Request Body**:
