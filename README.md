@@ -52,7 +52,7 @@ This repository contains the backend for a blog application, enabling users to p
 
 ### **Blogs**
 
-1. **create**  
+1. **Create Blog**  
    **POST** `/create`  
    **Request Body**:
   ```json
@@ -62,5 +62,29 @@ This repository contains the backend for a blog application, enabling users to p
     }
 ```
 
+2. **Get All Blog**  
+   **GET** `/all`  
+ 
+
+3. **Get Blog by id**  
+   **GET** `//byId/:id`  
+   For example id = 67927411e69f8d78a64bb72b
+ 
+
+4. **Update Blog by id**  
+   **PUT** `/update/:id`
+   For example id = 67927411e69f8d78a64bb72b
+   **Request Body**:
+  ```json
+   {
+     "title": "Blog Title",
+     "content": "Blog Content"
+    }
+```
+
+5. **Delete Blog by id**  
+   **POST** `//delete/:id`
+   For example id = 67927411e69f8d78a64bb72b 
+  
 
 
