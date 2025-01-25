@@ -40,8 +40,8 @@ This repository contains the backend for a blog application, enabling users to p
    }
 ```
 2. **Login**
-    **POST** `/login`
-  **Request Body**:
+   **POST** `/login`
+   **Request Body**:
 ```json
 {
   "email": "john@gmail.com",
@@ -49,6 +49,18 @@ This repository contains the backend for a blog application, enabling users to p
 }
 ```
 
+
+### **Blogs**
+
+1. **create**  
+   **POST** `/create`  
+   **Request Body**:
+  ```json
+   {
+     "title": "Blog Title",
+     "content": "Blog Content"
+    }
+```
 
 
 
